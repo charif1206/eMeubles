@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String
+  role      Role     @default(CONFIRMATEUR)
+  createdAt DateTime @default(now())
+}
+
+model Product {
+  id          String        @id @default(cuid())
+  name        String
+  slug        String        @unique
+  category    String
+  price       Float
+  status      ProductStatus @default(DISPONIBLE)
+  description String
+  woodType    String
+  dimensions  String
+  images      String[]
+  createdAt   DateTime      @default(now())
+  orders      Order[]
+}
+
+model Order {
+  id         String      @id
+  clientName String
+  phone      String
+  wilaya     String
+  commune    String
+  address    String
+  note       String?
+  productId  String
+  priceTotal Float
+  status     OrderStatus @default(PENDING)
+  createdAt  DateTime    @default(now())
+  product    Product     @relation(fields: [productId], references: [id])
+}
+
+enum Role {
+  ADMIN
+  CONFIRMATEUR
+}
+
+enum ProductStatus {
+  DISPONIBLE
+  SUR_COMMANDE
+  OUT_OF_STOCK
+}
+
+enum OrderStatus {
+  PENDING
+  CONFIRMED
+  IN_PRODUCTION
+  OUT_FOR_DELIVERY
+  DELIVERED
+  CANCELLED
+}

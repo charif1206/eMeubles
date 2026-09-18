@@ -1,0 +1,71 @@
+export interface Wilaya {
+  code: string;
+  nameAr: string;
+  nameFr: string;
+  deliveryFee: number;
+}
+
+export const WILAYAS: Wilaya[] = [
+  { code: '01', nameAr: 'أدرار', nameFr: 'Adrar', deliveryFee: 5500 },
+  { code: '02', nameAr: 'الشلف', nameFr: 'Chlef', deliveryFee: 3000 },
+  { code: '03', nameAr: 'الأغواط', nameFr: 'Laghouat', deliveryFee: 4000 },
+  { code: '04', nameAr: 'أم البواقي', nameFr: 'Oum El Bouaghi', deliveryFee: 3500 },
+  { code: '05', nameAr: 'باتنة', nameFr: 'Batna', deliveryFee: 3500 },
+  { code: '06', nameAr: 'بجاية', nameFr: 'Béjaïa', deliveryFee: 3000 },
+  { code: '07', nameAr: 'بسكرة', nameFr: 'Biskra', deliveryFee: 4500 },
+  { code: '08', nameAr: 'بشار', nameFr: 'Béchar', deliveryFee: 5500 },
+  { code: '09', nameAr: 'البليدة', nameFr: 'Blida', deliveryFee: 2000 },
+  { code: '10', nameAr: 'البويرة', nameFr: 'Bouira', deliveryFee: 2500 },
+  { code: '11', nameAr: 'تمنراست', nameFr: 'Tamanrasset', deliveryFee: 6500 },
+  { code: '12', nameAr: 'تبسة', nameFr: 'Tébessa', deliveryFee: 4000 },
+  { code: '13', nameAr: 'تلمسان', nameFr: 'Tlemcen', deliveryFee: 4000 },
+  { code: '14', nameAr: 'تيارت', nameFr: 'Tiaret', deliveryFee: 3800 },
+  { code: '15', nameAr: 'تيزي وزو', nameFr: 'Tizi Ouzou', deliveryFee: 2800 },
+  { code: '16', nameAr: 'الجزائر العاصمة', nameFr: 'Alger', deliveryFee: 2500 },
+  { code: '17', nameAr: 'الجلفة', nameFr: 'Djelfa', deliveryFee: 4000 },
+  { code: '18', nameAr: 'جيجل', nameFr: 'Jijel', deliveryFee: 3200 },
+  { code: '19', nameAr: 'سطيف', nameFr: 'Sétif', deliveryFee: 3000 },
+  { code: '20', nameAr: 'سعيدة', nameFr: 'Saïda', deliveryFee: 4000 },
+  { code: '21', nameAr: 'سكيكدة', nameFr: 'Skikda', deliveryFee: 3500 },
+  { code: '22', nameAr: 'سيدي بلعباس', nameFr: 'Sidi Bel Abbès', deliveryFee: 3800 },
+  { code: '23', nameAr: 'عنابة', nameFr: 'Annaba', deliveryFee: 4000 },
+  { code: '24', nameAr: 'قالمة', nameFr: 'Guelma', deliveryFee: 3800 },
+  { code: '25', nameAr: 'قسنطينة', nameFr: 'Constantine', deliveryFee: 3500 },
+  { code: '26', nameAr: 'المدية', nameFr: 'Médéa', deliveryFee: 2500 },
+  { code: '27', nameAr: 'مستغانم', nameFr: 'Mostaganem', deliveryFee: 3500 },
+  { code: '28', nameAr: 'المسيلة', nameFr: 'M\'Sila', deliveryFee: 3500 },
+  { code: '29', nameAr: 'معسكر', nameFr: 'Mascara', deliveryFee: 3500 },
+  { code: '30', nameAr: 'ورقلة', nameFr: 'Ouargla', deliveryFee: 5500 },
+  { code: '31', nameAr: 'وهران', nameFr: 'Oran', deliveryFee: 3500 },
+  { code: '32', nameAr: 'البيض', nameFr: 'El Bayadh', deliveryFee: 4500 },
+  { code: '33', nameAr: 'إليزي', nameFr: 'Illizi', deliveryFee: 6500 },
+  { code: '34', nameAr: 'برج بوعريريج', nameFr: 'Bordj Bou Arreridj', deliveryFee: 3000 },
+  { code: '35', nameAr: 'بومرداس', nameFr: 'Boumerdès', deliveryFee: 2000 },
+  { code: '36', nameAr: 'الطارف', nameFr: 'El Tarf', deliveryFee: 4000 },
+  { code: '37', nameAr: 'تندوف', nameFr: 'Tindouf', deliveryFee: 6500 },
+  { code: '38', nameAr: 'تسمسيلت', nameFr: 'Tissemsilt', deliveryFee: 3500 },
+  { code: '39', nameAr: 'الوادي', nameFr: 'El Oued', deliveryFee: 5000 },
+  { code: '40', nameAr: 'خنشلة', nameFr: 'Khenchela', deliveryFee: 4000 },
+  { code: '41', nameAr: 'سوق أهراس', nameFr: 'Souk Ahras', deliveryFee: 4000 },
+  { code: '42', nameAr: 'تيبازة', nameFr: 'Tipaza', deliveryFee: 2200 },
+  { code: '43', nameAr: 'ميلة', nameFr: 'Mila', deliveryFee: 3500 },
+  { code: '44', nameAr: 'عين الدفلى', nameFr: 'Aïn Defla', deliveryFee: 2800 },
+  { code: '45', nameAr: 'النعامة', nameFr: 'Naâma', deliveryFee: 4500 },
+  { code: '46', nameAr: 'عين تموشنت', nameFr: 'Aïn Témouchent', deliveryFee: 3800 },
+  { code: '47', nameAr: 'غرداية', nameFr: 'Ghardaïa', deliveryFee: 5000 },
+  { code: '48', nameAr: 'غليزان', nameFr: 'Relizane', deliveryFee: 3500 },
+  { code: '49', nameAr: 'تيميمون', nameFr: 'Timimoun', deliveryFee: 5500 },
+  { code: '50', nameAr: 'برج باجي مختار', nameFr: 'Bordj Badji Mokhtar', deliveryFee: 7000 },
+  { code: '51', nameAr: 'أولاد جلال', nameFr: 'Ouled Djellal', deliveryFee: 4500 },
+  { code: '52', nameAr: 'بني عباس', nameFr: 'Béni Abbès', deliveryFee: 5500 },
+  { code: '53', nameAr: 'عين صالح', nameFr: 'In Salah', deliveryFee: 6000 },
+  { code: '54', nameAr: 'عين قزام', nameFr: 'In Guezzam', deliveryFee: 7000 },
+  { code: '55', nameAr: 'تقرت', nameFr: 'Touggourt', deliveryFee: 5200 },
+  { code: '56', nameAr: 'جانت', nameFr: 'Djanet', deliveryFee: 7000 },
+  { code: '57', nameAr: 'المغير', nameFr: 'El M\'Ghair', deliveryFee: 4800 },
+  { code: '58', nameAr: 'المنيعة', nameFr: 'El Meniaa', deliveryFee: 5200 },
+];
+
+export function getWilayaByCode(code: string): Wilaya | undefined {
+  return WILAYAS.find((w) => w.code === code);
+}
